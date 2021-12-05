@@ -173,7 +173,7 @@ class MainActivity : AppCompatActivity(), LocationListener {
         val currentlon = mPreferences.getString(KEY_LON, "")
         // API 주소와 키
         val url =
-            "https://api.openweathermap.org/data/2.5/onecall?lat=$currentlat&lon=$currentlon&exclude=minutely,daily,alerts&appid=4a1db26701d20339665d0855a84cc6e8&lang=KR&units=metric"
+            "https://api.openweathermap.org/data/2.5/onecall?lat=$currentlat&lon=$currentlon&exclude=minutely,daily,alerts&appid="+"{API 키 값}"+"&lang=KR&units=metric"
 
         val request: StringRequest =
             object : StringRequest(Method.GET, url, Response.Listener { response ->
